@@ -1,0 +1,165 @@
+2024-07-11 20:37:23,760 - Data loaded from ./data/alaka.csv
+2024-07-11 20:37:23,806 - Data sampled to 100000 rows
+2024-07-11 20:37:25,449 - Feature engineering completed
+2024-07-11 20:37:25,912 - Preprocessed X shape: (173172, 116)
+2024-07-11 20:37:25,913 - Feature counts after preprocessing:
+2024-07-11 20:37:25,913 - query_id: 1
+2024-07-11 20:37:25,913 - attr: 1
+2024-07-11 20:37:25,913 - sat_click: 1
+2024-07-11 20:37:25,913 - sat_pur: 1
+2024-07-11 20:37:25,913 - pur: 1
+2024-07-11 20:37:25,913 - cont: 1
+2024-07-11 20:37:25,913 - query_length: 1
+2024-07-11 20:37:25,913 - query_unique_words: 1
+2024-07-11 20:37:25,913 - has_luxury: 1
+2024-07-11 20:37:25,913 - has_cheap: 1
+2024-07-11 20:37:25,913 - day_of_week: 1
+2024-07-11 20:37:25,913 - is_weekend: 1
+2024-07-11 20:37:25,913 - hour: 1
+2024-07-11 20:37:25,913 - ctr: 1
+2024-07-11 20:37:25,913 - purchase_rate: 1
+2024-07-11 20:37:25,913 - satisfaction_score: 1
+2024-07-11 20:37:25,913 - attr_cont_product: 1
+2024-07-11 20:37:25,913 - attr_percentile: 1
+2024-07-11 20:37:25,913 - ctr_percentile: 1
+2024-07-11 20:37:25,913 - tfidf_0: 1
+2024-07-11 20:37:25,913 - tfidf_1: 1
+2024-07-11 20:37:25,913 - tfidf_2: 1
+2024-07-11 20:37:25,913 - tfidf_3: 1
+2024-07-11 20:37:25,913 - tfidf_4: 1
+2024-07-11 20:37:25,913 - tfidf_5: 1
+2024-07-11 20:37:25,913 - tfidf_6: 1
+2024-07-11 20:37:25,913 - tfidf_7: 1
+2024-07-11 20:37:25,913 - tfidf_8: 1
+2024-07-11 20:37:25,913 - tfidf_9: 1
+2024-07-11 20:37:25,913 - query_type_rental: 1
+2024-07-11 20:37:25,913 - query_type_sale: 1
+2024-07-11 20:37:25,913 - location_adana: 1
+2024-07-11 20:37:25,913 - location_adiyaman: 1
+2024-07-11 20:37:25,913 - location_afyonkarahisar: 1
+2024-07-11 20:37:25,913 - location_agri: 1
+2024-07-11 20:37:25,913 - location_aksaray: 1
+2024-07-11 20:37:25,913 - location_amasya: 1
+2024-07-11 20:37:25,913 - location_ankara: 1
+2024-07-11 20:37:25,913 - location_antalya: 1
+2024-07-11 20:37:25,913 - location_ardahan: 1
+2024-07-11 20:37:25,914 - location_artvin: 1
+2024-07-11 20:37:25,914 - location_aydin: 1
+2024-07-11 20:37:25,914 - location_balikesir: 1
+2024-07-11 20:37:25,914 - location_bartin: 1
+2024-07-11 20:37:25,914 - location_batman: 1
+2024-07-11 20:37:25,914 - location_bayburt: 1
+2024-07-11 20:37:25,914 - location_bilecik: 1
+2024-07-11 20:37:25,914 - location_bingol: 1
+2024-07-11 20:37:25,914 - location_bitlis: 1
+2024-07-11 20:37:25,914 - location_bolu: 1
+2024-07-11 20:37:25,914 - location_burdur: 1
+2024-07-11 20:37:25,914 - location_bursa: 1
+2024-07-11 20:37:25,914 - location_canakkale: 1
+2024-07-11 20:37:25,914 - location_cankiri: 1
+2024-07-11 20:37:25,914 - location_corum: 1
+2024-07-11 20:37:25,914 - location_denizli: 1
+2024-07-11 20:37:25,914 - location_diyarbakir: 1
+2024-07-11 20:37:25,914 - location_duzce: 1
+2024-07-11 20:37:25,914 - location_edirne: 1
+2024-07-11 20:37:25,914 - location_elazig: 1
+2024-07-11 20:37:25,914 - location_erzincan: 1
+2024-07-11 20:37:25,914 - location_erzurum: 1
+2024-07-11 20:37:25,914 - location_eskisehir: 1
+2024-07-11 20:37:25,914 - location_gaziantep: 1
+2024-07-11 20:37:25,914 - location_giresun: 1
+2024-07-11 20:37:25,914 - location_gumushane: 1
+2024-07-11 20:37:25,914 - location_hakkari: 1
+2024-07-11 20:37:25,914 - location_hatay: 1
+2024-07-11 20:37:25,914 - location_igdir: 1
+2024-07-11 20:37:25,914 - location_isparta: 1
+2024-07-11 20:37:25,914 - location_istanbul: 1
+2024-07-11 20:37:25,914 - location_izmir: 1
+2024-07-11 20:37:25,914 - location_kahramanmaras: 1
+2024-07-11 20:37:25,914 - location_karabuk: 1
+2024-07-11 20:37:25,914 - location_karaman: 1
+2024-07-11 20:37:25,914 - location_kars: 1
+2024-07-11 20:37:25,914 - location_kastamonu: 1
+2024-07-11 20:37:25,914 - location_kayseri: 1
+2024-07-11 20:37:25,914 - location_kilis: 1
+2024-07-11 20:37:25,914 - location_kirikkale: 1
+2024-07-11 20:37:25,914 - location_kirklareli: 1
+2024-07-11 20:37:25,914 - location_kirsehir: 1
+2024-07-11 20:37:25,914 - location_kktc: 1
+2024-07-11 20:37:25,914 - location_kocaeli: 1
+2024-07-11 20:37:25,914 - location_konya: 1
+2024-07-11 20:37:25,914 - location_kutahya: 1
+2024-07-11 20:37:25,914 - location_malatya: 1
+2024-07-11 20:37:25,914 - location_manisa: 1
+2024-07-11 20:37:25,914 - location_mardin: 1
+2024-07-11 20:37:25,914 - location_mersin: 1
+2024-07-11 20:37:25,914 - location_mugla: 1
+2024-07-11 20:37:25,914 - location_mus: 1
+2024-07-11 20:37:25,914 - location_nevsehir: 1
+2024-07-11 20:37:25,914 - location_nigde: 1
+2024-07-11 20:37:25,914 - location_ordu: 1
+2024-07-11 20:37:25,915 - location_osmaniye: 1
+2024-07-11 20:37:25,915 - location_rize: 1
+2024-07-11 20:37:25,915 - location_sakarya: 1
+2024-07-11 20:37:25,915 - location_samsun: 1
+2024-07-11 20:37:25,915 - location_sanliurfa: 1
+2024-07-11 20:37:25,915 - location_siirt: 1
+2024-07-11 20:37:25,915 - location_sinop: 1
+2024-07-11 20:37:25,915 - location_sivas: 1
+2024-07-11 20:37:25,915 - location_tekirdag: 1
+2024-07-11 20:37:25,915 - location_tokat: 1
+2024-07-11 20:37:25,915 - location_trabzon: 1
+2024-07-11 20:37:25,915 - location_tunceli: 1
+2024-07-11 20:37:25,915 - location_türkiye: 1
+2024-07-11 20:37:25,915 - location_usak: 1
+2024-07-11 20:37:25,915 - location_van: 1
+2024-07-11 20:37:25,915 - location_yalova: 1
+2024-07-11 20:37:25,915 - location_yozgat: 1
+2024-07-11 20:37:25,915 - location_zonguldak: 1
+2024-07-11 20:37:25,915 - property_type_apartment: 1
+2024-07-11 20:37:25,915 - property_type_house: 1
+2024-07-11 20:37:25,915 - property_type_other: 1
+2024-07-11 20:37:25,915 - Top 10 features with most generated features:
+2024-07-11 20:37:25,915 - query_id: 1
+2024-07-11 20:37:25,915 - attr: 1
+2024-07-11 20:37:25,915 - sat_click: 1
+2024-07-11 20:37:25,915 - sat_pur: 1
+2024-07-11 20:37:25,915 - pur: 1
+2024-07-11 20:37:25,915 - cont: 1
+2024-07-11 20:37:25,915 - query_length: 1
+2024-07-11 20:37:25,915 - query_unique_words: 1
+2024-07-11 20:37:25,915 - has_luxury: 1
+2024-07-11 20:37:25,915 - has_cheap: 1
+2024-07-11 20:37:26,125 - Selected features: ['query_id', 'attr', 'sat_click', 'sat_pur', 'pur', 'query_length', 'ctr', 'purchase_rate', 'satisfaction_score', 'attr_cont_product', 'attr_percentile', 'ctr_percentile', 'query_type_rental', 'query_type_sale', 'location_ankara', 'location_malatya', 'location_türkiye', 'property_type_apartment', 'property_type_house', 'property_type_other']
+2024-07-11 20:43:31,141 - Cross-validation scores: [0.9993035  0.9994698  0.99920914 0.99948012 0.99932419]
+2024-07-11 20:43:31,144 - Mean cross-validation score: 0.999357350270915
+2024-07-11 20:45:18,244 - Fitted model saved to rf_shap_analysis_20240711_203723/rf_pipeline.joblib
+2024-07-11 20:45:18,382 - 
+Model Performance on Test Set:
+2024-07-11 20:45:18,382 - Mean Squared Error: 1.599446433880763e-06
+2024-07-11 20:45:18,382 - R-squared: 0.9994076612265119
+2024-07-12 06:34:14,952 - 
+Feature Importance based on SHAP values:
+2024-07-12 06:34:14,956 -                     feature  mean_abs_shap_value
+1                      attr         1.064210e-02
+9         attr_cont_product         9.483379e-03
+10          attr_percentile         9.482396e-03
+8        satisfaction_score         5.107648e-03
+2                 sat_click         1.076823e-03
+6                       ctr         2.523374e-04
+11           ctr_percentile         9.044868e-05
+4                       pur         8.396179e-05
+7             purchase_rate         6.484493e-05
+3                   sat_pur         1.052189e-05
+0                  query_id         6.428942e-06
+5              query_length         4.550916e-06
+19      property_type_other         2.331736e-06
+12        query_type_rental         1.884544e-06
+17  property_type_apartment         1.701894e-06
+13          query_type_sale         1.313030e-06
+14          location_ankara         7.570183e-07
+18      property_type_house         5.211907e-07
+16         location_türkiye         8.790794e-08
+15         location_malatya         8.049056e-08
+2024-07-12 06:34:19,399 - Analysis complete. Results saved in directory: rf_shap_analysis_20240711_203723
+2024-07-12 06:34:19,399 - Total time taken: 35816.26 seconds

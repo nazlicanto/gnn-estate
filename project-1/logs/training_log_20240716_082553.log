@@ -1,0 +1,73 @@
+2024-07-16 08:25:53,777 - INFO - Using device: cuda
+2024-07-16 08:25:53,777 - INFO - loading data...
+2024-07-16 08:26:04,879 - INFO - creating graph...
+2024-07-16 08:26:04,879 - INFO - Starting graph creation...
+2024-07-16 08:26:05,068 - INFO - Interaction data shape: {interaction_data.shape}
+2024-07-16 08:26:48,678 - INFO - Number of users: 130927
+2024-07-16 08:26:48,756 - INFO - Ad data shape: (618325, 11)
+2024-07-16 08:26:49,080 - INFO -    kategori_1_x  kategori_2_x  ...  ilan_fiyat_category  listing_popularity
+0      0.612230     -0.955912  ...             1.368305           -0.398049
+1     -0.627238     -0.955912  ...             0.518375           -0.398049
+2      0.612230     -0.955912  ...             1.198319           -0.398049
+3      0.612230      0.460836  ...             0.688361           -0.398049
+4     -0.627238     -0.955912  ...             0.518375           -0.398049
+
+[5 rows x 7 columns]
+2024-07-16 08:26:50,103 - INFO - Number of ads: 376618
+2024-07-16 08:26:50,870 - INFO - Number of ('ad', 'in', 'location') edges: 618325
+2024-07-16 08:26:50,870 - INFO - Number of ('location', 'contains', 'ad') edges: 618325
+2024-07-16 08:26:50,870 - INFO - Number of ('user', 'click', 'ad') edges: 292010
+2024-07-16 08:26:50,870 - INFO - Number of ('ad', 'rev_click', 'user') edges: 292010
+2024-07-16 08:26:50,870 - INFO - Number of ('user', 'purchase', 'ad') edges: 28139
+2024-07-16 08:26:50,870 - INFO - Number of ('ad', 'rev_purchase', 'user') edges: 28139
+2024-07-16 08:26:50,943 - INFO - graph created successfully!
+2024-07-16 08:26:51,512 - INFO - number of ('ad', 'in', 'location') edges: 618325
+2024-07-16 08:26:51,512 - INFO - number of ('location', 'contains', 'ad') edges: 618325
+2024-07-16 08:26:51,512 - INFO - number of ('user', 'click', 'ad') edges: 292010
+2024-07-16 08:26:51,512 - INFO - number of ('ad', 'rev_click', 'user') edges: 292010
+2024-07-16 08:26:51,513 - INFO - number of ('user', 'purchase', 'ad') edges: 28139
+2024-07-16 08:26:51,513 - INFO - number of ('ad', 'rev_purchase', 'user') edges: 28139
+2024-07-16 08:26:51,513 - INFO - Ad feature count: 55
+2024-07-16 08:26:51,513 - INFO - User feature count: 5
+2024-07-16 08:26:51,513 - INFO - (['user', 'location', 'ad'], [('ad', 'in', 'location'), ('location', 'contains', 'ad'), ('user', 'click', 'ad'), ('ad', 'rev_click', 'user'), ('user', 'purchase', 'ad'), ('ad', 'rev_purchase', 'user')])
+2024-07-16 08:26:51,570 - INFO - GNNModel(
+  (il_embedding): Embedding(82, 16)
+  (ilce_embedding): Embedding(831, 16)
+  (mahalle_embedding): Embedding(11223, 16)
+  (conv1): HeteroConv(num_relations=6)
+  (conv2): HeteroConv(num_relations=6)
+  (conv3): HeteroConv(num_relations=6)
+  (lin1): Linear(in_features=128, out_features=128, bias=True)
+  (lin2): Linear(in_features=128, out_features=128, bias=True)
+  (lin3): Linear(in_features=256, out_features=128, bias=True)
+  (lin4): Linear(in_features=128, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+)
+2024-07-16 08:26:51,571 - INFO - Metadata structure:
+2024-07-16 08:26:51,571 - INFO - Node types: ['user', 'location', 'ad']
+2024-07-16 08:26:51,571 - INFO - Edge types: [('ad', 'in', 'location'), ('location', 'contains', 'ad'), ('user', 'click', 'ad'), ('ad', 'rev_click', 'user'), ('user', 'purchase', 'ad'), ('ad', 'rev_purchase', 'user')]
+2024-07-16 08:26:51,571 - INFO - User features shape: torch.Size([130927, 5])
+2024-07-16 08:26:51,571 - INFO - Ad features shape: torch.Size([618325, 55])
+2024-07-16 08:26:51,571 - INFO - 
+Graph structure:
+2024-07-16 08:26:51,571 - INFO - user nodes: 130927
+2024-07-16 08:26:51,571 - INFO - location nodes: 18088
+2024-07-16 08:26:51,571 - INFO - ad nodes: 618325
+2024-07-16 08:26:51,571 - INFO - ('ad', 'in', 'location') edges: 618325
+2024-07-16 08:26:51,571 - INFO - ('location', 'contains', 'ad') edges: 618325
+2024-07-16 08:26:51,571 - INFO - ('user', 'click', 'ad') edges: 292010
+2024-07-16 08:26:51,571 - INFO - ('ad', 'rev_click', 'user') edges: 292010
+2024-07-16 08:26:51,571 - INFO - ('user', 'purchase', 'ad') edges: 28139
+2024-07-16 08:26:51,571 - INFO - ('ad', 'rev_purchase', 'user') edges: 28139
+2024-07-16 08:27:50,145 - INFO - Epoch: 000, Train Loss: 2.3632, Val AUC-ROC: 0.8534, Val Avg Precision: 0.8210, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:28:46,928 - INFO - Epoch: 001, Train Loss: 1.7542, Val AUC-ROC: 0.8872, Val Avg Precision: 0.8587, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:29:44,325 - INFO - Epoch: 002, Train Loss: 1.6157, Val AUC-ROC: 0.8934, Val Avg Precision: 0.8653, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:30:41,661 - INFO - Epoch: 003, Train Loss: 1.5457, Val AUC-ROC: 0.9069, Val Avg Precision: 0.8831, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:31:38,512 - INFO - Epoch: 004, Train Loss: 1.4702, Val AUC-ROC: 0.9169, Val Avg Precision: 0.8963, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:32:35,811 - INFO - Epoch: 005, Train Loss: 1.4082, Val AUC-ROC: 0.9252, Val Avg Precision: 0.9072, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 0.8755
+2024-07-16 08:33:32,156 - INFO - Epoch: 006, Train Loss: 1.3572, Val AUC-ROC: 0.9275, Val Avg Precision: 0.9095, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 0.9216
+2024-07-16 08:34:29,404 - INFO - Epoch: 007, Train Loss: 1.2922, Val AUC-ROC: 0.9331, Val Avg Precision: 0.9169, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:35:27,356 - INFO - Epoch: 008, Train Loss: 1.2672, Val AUC-ROC: 0.9359, Val Avg Precision: 0.9209, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:36:25,472 - INFO - Epoch: 009, Train Loss: 1.2408, Val AUC-ROC: 0.9376, Val Avg Precision: 0.9232, Val MRR: 0.0001, Val Hit Rate@10: 0.0001, Val NDCG@10: 1.0000
+2024-07-16 08:36:35,360 - INFO - Test AUC-ROC: 0.9372, Test Avg Precision: 0.9239, Test MRR: 0.0001, Test Hit Rate@10: 0.0001, Test NDCG@10: 1.0000
+2024-07-16 08:36:36,934 - INFO - Embeddings saved to output_embeddings
